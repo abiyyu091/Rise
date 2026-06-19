@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+      .font-dm {
+        font-family: "DM Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="bg-white px-5 py-2 absolute top-0 left-0 right-0 z-10">
+      <img src="Logo_videobelajar.png" alt="Logo" />
+    </nav>
+
+    <main
+      class="bg-[#FFFDF3] min-h-screen w-screen flex justify-center items-center"
+    >
+      <div
+        class="bg-white p-7 rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)] w-1/3 h-96 flex flex-col justify-center"
+      >
+        <!-- Title -->
+        <div class="font-poppins text-center mb-3">
+          <h3 class="text-lg font-semibold mb-1">Masuk ke Akun</h3>
+          <p class="text-xs text-[#333333]">
+            Yuk, lanjutin belajarmu di videobelajar
+          </p>
+        </div>
+
+        <!-- Input Fields -->
+        <form id="login_form" class="font-dm flex flex-col gap-2.5 mb-3">
+          <div class="flex flex-col gap-1">
+            <label for="email" class="text-xs"
+              >E-mail<span class="text-red-500"> *</span></label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="border border-[#ebebeb] rounded-md h-[30px] px-2.5 text-xs focus:outline-none focus:border-[#918f8f]"
+            />
+          </div>
+          <div class="flex flex-col gap-1">
+            <label for="password" class="text-xs"
+              >Kata Sandi<span class="text-red-500"> *</span></label
+            >
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              class="border border-[#ebebeb] rounded-md h-[30px] px-2.5 text-xs focus:outline-none focus:border-[#918f8f]"
+            />
+          </div>
+          <div class="text-right">
+            <a href="#" class="text-xs text-black no-underline"
+              >Lupa Kata Sandi?</a
+            >
+          </div>
+        </form>
+
+        <!-- Buttons -->
+        <div class="flex flex-col gap-2">
+          <button
+            id="masuk_button"
+            type="submit"
+            form="login_form"
+            class="font-dm font-bold w-full h-8 rounded-lg bg-[#3ECF4C] text-white text-xs cursor-pointer border-none"
+          >
+            Masuk
+          </button>
+
+          <a
+            href="register.html"
+            id="daftar_button"
+            class="font-dm font-bold flex items-center justify-center w-full h-8 rounded-lg bg-[#E2FCD9CC] text-[#3ECF4C] text-xs no-underline"
+          >
+            Daftar
+          </a>
+
+          <div class="flex items-center justify-between gap-2">
+            <div class="flex-1 border-t border-[#F1F1F1]"></div>
+            <p class="font-dm text-xs text-gray-400">atau</p>
+            <div class="flex-1 border-t border-[#F1F1F1]"></div>
+          </div>
+
+          <button
+            id="login_with_google"
+            class="font-dm font-bold flex items-center justify-center gap-2 w-full h-8 rounded-lg border border-[#ebebeb] bg-white text-xs cursor-pointer"
+          >
+            <img src="google_logo.png" width="16" alt="Google logo" />
+            Masuk dengan Google
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
