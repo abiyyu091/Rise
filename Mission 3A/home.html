@@ -453,31 +453,38 @@
         "
       >
         <div
-          class="absolute inset-0 flex flex-col justify-center items-center text-center p-6 text-white max-w-3xl mx-auto"
+          class="absolute h-[400px] inset-0 flex flex-col justify-center items-center text-center p-2 lg:p-6 text-white max-w-3xl w-fit mx-auto"
         >
-          <h5 class="text-[#C1C2C4] font-semibold font-dm text-lg">
+          <h5 class="text-[#C1C2C4] font-semibold font-dm text-md md:text-lg">
             Newsletter
           </h5>
           <h3
-            class="text-white text-center text-4xl font-bold font-poppins mt-2"
+            class="text-white text-center text-2xl md:text-3xl lg:text-4xl font-bold font-poppins mt-2"
           >
             Mau Belajar Lebih Banyak
           </h3>
-          <p class="text-white text-center text-md font-dm">
-            Daftarkan dirimu untuk mendapatkan informasi terbaru <br />
-            dan penawaran spesial dari program-program terbaik hariesok.id
+          <p class="text-white text-center text-xs md:text-base font-dm mt-2">
+            Daftarkan dirimu untuk mendapatkan informasi terbaru dan penawaran
+            spesial dari program-program terbaik hariesok.id
           </p>
-          <form>
+          <form
+            class="w-full md:flex items-center justify-between md:bg-white p-2 md:rounded-lg mt-4"
+          >
             <input
               type="email"
               placeholder="Masukkan emailmu"
-              class="w-full md:w-1/2 lg:w-1/3 px-4 py-2 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 mt-4"
+              class="w-full text-center md:text-left md:w-1/2 lg:w-3/4 px-4 py-2 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 md:focus:ring-offset-2 md:focus:ring-white transition"
             />
             <button
-              type="submit"
-              class="bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-lg transition mt-4"
+              class="hidden md:block bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-3 px-6 rounded-lg transition"
             >
-              Daftar Sekarang
+              Subscribe
+            </button>
+            <button
+              type="submit"
+              class="bg-yellow-500 w-full hover:bg-yellow-600 text-white font-medium py-3 px-6 rounded-lg transition mt-4 md:hidden"
+            >
+              Subscribe
             </button>
           </form>
         </div>
